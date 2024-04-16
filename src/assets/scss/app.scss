@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply flex flex-row justify-center p-7 text-4xl font-bold;
+}
+
+.button {
+    @apply px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700;
+}
+
+nav {
+    @apply flex flex-row justify-center bg-gray-800 text-white p-7;
+
+    a {
+        @apply px-4 py-2;
+
+        &.router-link-exact-active {
+            @apply bg-orange-600;
+        }
+    }
+}
